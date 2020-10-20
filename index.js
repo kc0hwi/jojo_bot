@@ -15,6 +15,9 @@ Object.keys(botCommands).map(key => {
 })
 
 const TOKEN = process.env.TOKEN;
+const CHANNEL_ID = process.env.CHANNEL_ID;
+
+
 bot.login(TOKEN);
 
 bot.on('ready', () => {
@@ -22,7 +25,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', async msg => {
-    const channel = bot.channels.cache.get("425469302309781505")
+    const channel = bot.channels.cache.get(CHANNEL_ID)
 
     const args = msg.content.split(/ +/)
     const command = args.shift().toLowerCase()
