@@ -82,8 +82,8 @@ const gingerReddits = [
 
 const gothReddits = [
     'RealMetalchicks',
-    'bigtiddygothgf',
     'altgonewild',
+    'gothsluts',
 ]
 
 module.exports = {
